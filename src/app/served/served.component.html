@@ -1,0 +1,28 @@
+<div class="container">
+    <!-- <div class="row" *ngFor="let i of served">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">{{i.orderNo}}</div>
+        <div class="col-md-2">{{i.CustName}}</div>
+        <div class="col-md-2">{{i.itemName}}</div>
+        <div class="col-md-2">{{i.Price}}</div>
+        <div class="col-md-2">{{i.status}}</div>
+        <div class="col-md-1"></div>
+    </div> -->
+    <table>
+        <tr class="header">
+        <th>orderNo</th>
+        <th>CustName</th>
+        <th>itemName</th>
+        <th>Price</th>
+        <th>status</th>  
+    </tr>
+    <tr *ngFor="let i of served"> 
+        <td>{{i.orderNo}}</td>
+        <td>{{i.CustName}}</td>
+        <td>{{i.itemName}}</td>
+        <td>{{i.Price}}</td>
+        <td>{{i.status}}</td>
+         
+    </tr>
+</table>
+</div>

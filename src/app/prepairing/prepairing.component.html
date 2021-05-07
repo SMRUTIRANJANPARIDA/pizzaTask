@@ -1,0 +1,21 @@
+<div class="container">
+    <table>
+        <tr class="header">
+        <th>orderNo</th>
+        <th>CustName</th>
+        <th>itemName</th>
+        <th>Price</th>
+        <th>status</th>  
+    </tr>
+    <tr *ngFor="let i of prepairing"> 
+        <td>{{i.orderNo}}</td>
+        <td>{{i.CustName}}</td>
+        <td>{{i.itemName}}</td>
+        <td>{{i.Price}}</td>
+        <td>{{i.status}}</td>
+        <td>
+            <p *ngIf = "i.status == 'prepairing'"(click) = "changeOrder(i)" >close</p>
+        </td>
+    </tr>
+</table>
+</div>
